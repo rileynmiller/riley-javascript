@@ -69,11 +69,29 @@ console.log(makeName("Robert", "\"Beto\"", "O'Rouke"));
 // Make a name with middle initial
 function makeBetterName(firstName, middleName, lastName) {
   if (middleName.length === 1) {
-    return true;
+    middleName = middleName + ".";
+    let fullName = firstName + " " + middleName + lastName;
+    return fullName;
 } else {
     return false;
   }
 }
+
+console.log(makeBetterName("Joan", "Marie", "Larkin"));
+console.log(makeBetterName("Donald", "F", "Trump"));
+
+function theWinner(home, away) {
+  if (home > away) {
+  let message = "the home team won";
+  return message;
+  }
+else{
+  let message2 = "the away team won"
+  return message2;
+}
+}
+  console.log(theWinner("5", "3"));
+
 
   </script>
 </body>
