@@ -46,10 +46,34 @@
 let greeting = 'my name is';
 console.log(greeting + " " + name);
 
+console.log("Using Functions");
 
+// function to square numbers
+function makeSquare(theNumb) {
+  let squared = theNumb * theNumb;
+  return squared;
+}
 
+let try01 = makeSquare(3);
+console.log(try01);
 
+// function on my own
+console.log('makeName');
+function makeName (firstName, middleName, lastName) {
+  let fullName = firstName + " " + middleName + " " + lastName;
+  return fullName;
+}
+console.log(makeName("Logan", "Wayne", "Miller"));
+console.log(makeName("Robert", "\"Beto\"", "O'Rouke"));
 
+// Make a name with middle initial
+function makeBetterName(firstName, middleName, lastName) {
+  if (middleName.length === 1) {
+    return true;
+} else {
+    return false;
+  }
+}
 
   </script>
 </body>
